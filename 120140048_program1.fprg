@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ndejo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-22 08:39:45 PM"/>
+        <attribute name="created" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wNS0yMjswNjo0OToyOCBQTTsyNjQw"/>
+        <attribute name="edited" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wNS0yMjswODozOTo0NSBQTTsxNDsyODAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai" type="Integer" array="True" size="3"/>
+            <declare name="pilih" type="Integer" array="False" size=""/>
+            <declare name="ulang" type="String" array="False" size=""/>
+            <output expression="&quot;PROGRAM MATEMATIKA DASAR 1&quot;" newline="True"/>
+            <output expression="&quot;TURUNAN DAN INTEGRAL&quot;" newline="True"/>
+            <output expression="&quot;FITRA ILYASA 120140048&quot;" newline="True"/>
+            <do expression="ulang == &quot;y&quot; || ulang == &quot;Y&quot;">
+                <output expression="&quot;Menu Pilihan : &quot;" newline="True"/>
+                <output expression="&quot;1. Turunan&quot;" newline="True"/>
+                <output expression="&quot;2. Integral&quot;" newline="True"/>
+                <input variable="pilih"/>
+                <output expression="&quot;Masukkan Nilai A : &quot;" newline="True"/>
+                <input variable="nilai[0]"/>
+                <output expression="&quot;Masukkan Nilai B : &quot;" newline="True"/>
+                <input variable="nilai[1]"/>
+                <output expression="&quot;Masukkan Nilai C : &quot;" newline="True"/>
+                <input variable="nilai[2]"/>
+                <output expression="&quot;Fungsi f(x) : &quot;" newline="False"/>
+                <output expression="&quot;(&quot;" newline="False"/>
+                <output expression="nilai[1]" newline="False"/>
+                <output expression="&quot;x^2) + (&quot;" newline="False"/>
+                <output expression="nilai[2]" newline="False"/>
+                <output expression="&quot;x) + (&quot;" newline="False"/>
+                <output expression="nilai[2]" newline="False"/>
+                <output expression="&quot;)&quot;" newline="True"/>
+                <if expression="pilih == 1">
+                    <then>
+                        <output expression="&quot;Turunannya adalah : &quot;" newline="False"/>
+                        <output expression="&quot;(&quot;" newline="False"/>
+                        <output expression="nilai[0]*2" newline="False"/>
+                        <output expression="&quot;x) + (&quot;" newline="False"/>
+                        <output expression="nilai[1]" newline="False"/>
+                        <output expression="&quot;)&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="pilih == 2">
+                            <then>
+                                <output expression="&quot;Integralnya adalah : &quot;" newline="False"/>
+                                <output expression="&quot;(&quot;" newline="False"/>
+                                <output expression="nilai[0]/3" newline="False"/>
+                                <output expression="&quot;x^2) + (&quot;" newline="False"/>
+                                <output expression="nilai[1]/2" newline="False"/>
+                                <output expression="&quot;x) + (&quot;" newline="False"/>
+                                <output expression="nilai[2]" newline="False"/>
+                                <output expression="&quot;)&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Inputan tidak valid!&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Ingin Masuk Menu Lagi(Y/T)? &quot;" newline="True"/>
+                <input variable="ulang"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

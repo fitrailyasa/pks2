@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ndejo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-22 08:30:50 PM"/>
+        <attribute name="created" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wNS0yMjswNjo0OTo0OSBQTTsyNjQz"/>
+        <attribute name="edited" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wNS0yMjswODoyMDoyNyBQTTsxO25kZWpvO0ZJVFJBSUxZQVNBOzIwMjEtMDUtMjI7MDY6NDk6MjggUE07MTIwMTQwMDQ4X3Byb2dyYW0yLmZwcmc7NzMzMA=="/>
+        <attribute name="edited" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wNS0yMjswODozMDo1MCBQTTszOzI3Mzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Molaritas, molalitas" type="Real" array="True" size="2"/>
+            <declare name="pilih" type="Integer" array="False" size=""/>
+            <declare name="ulang" type="String" array="False" size=""/>
+            <output expression="&quot;PROGRAM KIMIA DASAR 1&quot;" newline="True"/>
+            <output expression="&quot;MOLARITAS DAN MOLALITAS&quot;" newline="True"/>
+            <output expression="&quot;FITRA ILYASA 120140048&quot;" newline="True"/>
+            <do expression="ulang == &quot;y&quot; || ulang == &quot;Y&quot;">
+                <output expression="&quot;Menu Pilihan : &quot;" newline="True"/>
+                <output expression="&quot;1. Molaritas&quot;" newline="True"/>
+                <output expression="&quot;2. molalitas&quot;" newline="True"/>
+                <input variable="pilih"/>
+                <if expression="pilih == 1">
+                    <then>
+                        <output expression="&quot;Masukkan mol suatu zat : &quot;" newline="True"/>
+                        <input variable="Molaritas[1]"/>
+                        <output expression="&quot;Masukkan Volume Larutan : &quot;" newline="True"/>
+                        <input variable="Molaritas[2]"/>
+                        <output expression="&quot;Jumlah Molaritasnya adalah : &quot;" newline="True"/>
+                        <output expression="(Molaritas[1]/Molaritas[2])" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="pilih == 2">
+                            <then>
+                                <output expression="&quot;Masukkan mol suatu zat : &quot;" newline="True"/>
+                                <input variable="Molalitas[1]"/>
+                                <output expression="&quot;Masukkan massa pelarut : &quot;" newline="True"/>
+                                <input variable="Molalitas[2]"/>
+                                <output expression="&quot;Jumlah molalitasnya adalah : &quot;" newline="True"/>
+                                <output expression="(Molalitas[1]/Molalitas[2])" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Inputan tidak valid!&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Ingin Masuk Menu Lagi(Y/T)? &quot;" newline="True"/>
+                <input variable="ulang"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

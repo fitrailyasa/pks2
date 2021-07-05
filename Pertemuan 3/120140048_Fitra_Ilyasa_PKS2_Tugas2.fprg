@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ndejo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-04 06:23:32 PM"/>
+        <attribute name="created" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wMi0yMzswODoyNToyNyBBTTsyNjE4"/>
+        <attribute name="edited" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wMy0wNDswNjoyMzozMiBQTTsyOTsyNzkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="120140048_Fitra_Ilyasa"/>
+            <declare name="Bilangan" type="Integer" array="False" size=""/>
+            <declare name="YA" type="String" array="False" size=""/>
+            <output expression="&quot;Masukkan bilangan bulat yang habis dibagi 3 dan tidak habis dibagi 2 : &quot;" newline="True"/>
+            <do expression="YA == &quot;YA&quot; or YA == &quot;Ya&quot; or YA == &quot;ya&quot;">
+                <input variable="Bilangan"/>
+                <if expression="Bilangan % 3 == 0 &amp;&amp; Bilangan % 2 != 0">
+                    <then>
+                        <output expression="&quot;YES&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;NO&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Apakah anda ingin memasukkan bilangan lagi? Ketik YA untuk melanjutkan&quot;" newline="True"/>
+                <input variable="YA"/>
+                <if expression="YA == &quot;YA&quot; or YA == &quot;Ya&quot; or YA == &quot;ya&quot;">
+                    <then>
+                        <output expression="&quot;Silahkan Masukkan lagi:&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;Program anda telah berakhir, silahkan klik Close.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

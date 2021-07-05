@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ndejo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-18 01:37:30 PM"/>
+        <attribute name="created" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wMy0xODswMToyNjoyOCBQTTsyNjMz"/>
+        <attribute name="edited" value="bmRlam87RklUUkFJTFlBU0E7MjAyMS0wMy0xODswMTozNzozMCBQTTs1OzI3NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="120140048"/>
+            <declare name="bil" type="Integer" array="False" size=""/>
+            <output expression="&quot;PROGRAM GANJIL GENAP&quot;" newline="True"/>
+            <output expression="&quot;Masukan bilangan: &quot;" newline="True"/>
+            <input variable="bil"/>
+            <if expression="bil % 2 == 0">
+                <then>
+                    <output expression="&quot;Merupakan bilangan genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Merupakan bilangan ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
